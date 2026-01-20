@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProKonsul - Solusi Terpadu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">ProKonsul</div>
+        <ul class="nav-links">
+            <li><a href="#home">Beranda</a></li>
+            <li><a href="#services">Layanan</a></li>
+            <li><a href="#contact">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Mitra Konsultasi Profesional Anda</h1>
+            <p>Dapatkan pandangan ahli di bidang Saham, Hukum, Psikologi, dan Politik.</p>
+            <a href="#services" class="cta-button">Lihat Layanan</a>
+        </div>
+    </header>
+
+    <section id="services" class="services-section">
+        <h2>Layanan Kami</h2>
+        <div class="cards-container">
+    
+            <div class="card" id="saham">
+                <div class="icon-box"><i class="fas fa-chart-line"></i></div>
+                <h3>Konsultasi Saham</h3>
+                <p>Analisis portofolio dan strategi investasi jangka panjang.</p>
+                <button class="book-btn" onclick="openModal('Konsultasi Saham')">Pilih Layanan</button>
+            </div>
+        
+            <div class="card" id="bisnis">
+                <div class="icon-box"><i class="fas fa-briefcase"></i></div>
+                <h3>Konsultasi Bisnis</h3>
+                <p>Perencanaan strategi, UMKM, dan pengembangan startup.</p>
+                <button class="book-btn" onclick="openModal('Konsultasi Bisnis')">Pilih Layanan</button>
+            </div>
+        
+            <div class="card" id="hukum">
+                <div class="icon-box"><i class="fas fa-gavel"></i></div>
+                <h3>Konsultasi Hukum</h3>
+                <p>Bantuan legalitas bisnis, sengketa perdata, dan pidana.</p>
+                <button class="book-btn" onclick="openModal('Konsultasi Hukum')">Pilih Layanan</button>
+            </div>
+        
+            <div class="card" id="psikologi">
+                <div class="icon-box"><i class="fas fa-brain"></i></div>
+                <h3>Konsultasi Psikologi</h3>
+                <p>Konseling kesehatan mental dan pengembangan diri.</p>
+                <button class="book-btn" onclick="openModal('Konsultasi Psikologi')">Pilih Layanan</button>
+            </div>
+        
+            <div class="card" id="politik">
+                <div class="icon-box"><i class="fas fa-landmark"></i></div>
+                <h3>Konsultasi Politik</h3>
+                <p>Strategi kampanye dan analisis isu publik.</p>
+                <button class="book-btn" onclick="openModal('Konsultasi Politik')">Pilih Layanan</button>
+            </div>
+        
+        </div> ```
+
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h3 id="modalTitle">Formulir Konsultasi</h3>
+            <form id="consultationForm">
+                <div class="form-group">
+                    <label>Nama Lengkap</label>
+                    <input type="text" id="name" required placeholder="Masukkan nama Anda">
+                </div>
+                <div class="form-group">
+                    <label>Email / WhatsApp</label>
+                    <input type="text" id="contact" required placeholder="Email atau No WA">
+                </div>
+                <div class="form-group">
+                    <label>Topik Permasalahan</label>
+                    <textarea id="message" rows="4" placeholder="Ceritakan singkat kebutuhan Anda"></textarea>
+                </div>
+                <button type="submit" class="submit-btn">Kirim Permintaan</button>
+            </form>
+        </div>
+    </div>
+
+   
+    <section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2>Hubungi Kami</h2>
+            <p>Klik ikon di bawah ini untuk terhubung langsung dengan tim ahli kami.</p>
+            
+            
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <a href="mailto:info@prokonsul.com">
+                        <i class="fas fa-envelope"></i>
+                        <p>info@prokonsul.com</p>
+                    </a>
+                </div>
+    
+                <div class="info-item">
+                    <a href="https://wa.me/6285715630032" target="_blank">
+                        <i class="fab fa-whatsapp"></i>
+                        <p>WhatsApp Kami</p>
+                    </a>
+                </div>
+    
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>Jakarta, Indonesia</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 ProKonsul Indonesia. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
