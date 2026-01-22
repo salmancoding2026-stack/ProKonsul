@@ -9,14 +9,21 @@
 </head>
 <body>
 
+
+    
+
     <nav class="navbar">
-        <div class="logo">ProKonsul</div>
+        <div class="logo">ProKonsul</div> <button id="darkModeToggle" class="mode-btn"><i class="fas fa-moon"></i></button>
         <ul class="nav-links">
             <li><a href="#home">Beranda</a></li>
             <li><a href="#services">Layanan</a></li>
             <li><a href="#contact">Kontak</a></li>
+            <li><a href="#blog">Berita</a></li>
         </ul>
     </nav>
+
+    
+
 
     <header id="home" class="hero">
         <div class="hero-content">
@@ -89,7 +96,54 @@
         </div>
     </div>
 
+    <section id="blog" class="blog-section">
+        <h2>Berita & Tips Ahli</h2>
+        <div class="blog-container">
+            
+            <article class="blog-card">
+                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1611974714024-42f01004bc6b?q=80&w=400');"></div>
+                <div class="blog-content">
+                    <span class="category">Saham</span>
+                    <h3>5 Emiten Blue Chip yang Menarik di Tahun 2026</h3>
+                    <p>Analisis mendalam mengenai pergerakan pasar modal di awal tahun ini...</p>
+                    
+                    <a href="tips-saham.html" class="read-more">Baca Selengkapnya</a>
+                </div>
+            </article>
+    
+            <article class="blog-card">
+                <div class="blog-img" style="background-image: url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=400');"></div>
+                <div class="blog-content">
+                    <span class="category">Hukum</span>
+                    <h3>Aturan Baru Legalitas PT Perorangan bagi UMKM</h3>
+                    <p>Panduan lengkap bagi pengusaha muda yang ingin meresmikan bisnis...</p>
+                    <a href="#" class="read-more">Baca Selengkapnya</a>
+                </div>
+            </article>
+    
+        </div>
+    </section>
+        
+      
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials-section">
+        <h2>Apa Kata Mereka?</h2>
+        <div class="testimonial-container">
+            <div class="testimonial-card">
+                <p>"Sangat membantu dalam menentukan strategi saham saya!"</p>
+                <h4>- Budi, Investor</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Konsultasi hukumnya sangat jelas dan solutif."</p>
+                <h4>- Siska, Pengusaha</h4>
+            </div>
+        </div>
+    </section>
    
+    
+
     <section id="contact" class="contact-section">
         <div class="contact-container">
             <h2>Hubungi Kami</h2>
@@ -118,6 +172,12 @@
                 </div>
             </div>
         </div>
+
+
+        <div class="status-indicator">
+            <span class="dot"></span>
+            <span class="status-text">Konsultan Online - Siap Membantu</span>
+        </div>
     </section>
 
     <footer>
@@ -125,5 +185,11 @@
     </footer>
 
     <script src="script.js"></script>
+
+    <a href="https://wa.me/6285715630032" class="floating-wa" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+        <span>Tanya Kami</span>
+    </a>
+
 </body>
 </html>
