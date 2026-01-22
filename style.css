@@ -276,3 +276,135 @@ html {
 html {
     scroll-behavior: smooth;
 }
+
+.testimonials-section { padding: 60px 5%; text-align: center; background: #ecf0f1; }
+.testimonial-container { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 30px; }
+.testimonial-card { background: white; padding: 20px; border-radius: 10px; width: 300px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+
+.dark-theme { background-color: #1a1a1a; color: #ffffff; }
+.dark-theme .card, .dark-theme .navbar { background-color: #2d2d2d; color: #ffffff; }
+.dark-theme .nav-links a { color: #ffffff; }
+
+/* Pastikan teks tetap berwarna gelap jika kartu tetap putih */
+.testimonial-card p, .testimonial-card h4 {
+    color: #333; /* Warna gelap agar terlihat di kotak putih */
+}
+
+/* ATAU jika Anda ingin kartunya juga ikut gelap saat Dark Mode: */
+.dark-theme .testimonial-card {
+    background-color: #3d3d3d; /* Latar belakang kartu jadi abu-abu tua */
+    color: #ffffff; /* Teks otomatis jadi putih */
+}
+
+.dark-theme .testimonial-card p {
+    color: #ecf0f1; /* Warna teks isi testimoni di mode gelap */
+}
+
+.dark-theme .testimonial-card h4 {
+    color: #f39c12; /* Warna nama pemberi testimoni di mode gelap */
+}
+
+/* Memastikan teks kontak tetap terlihat */
+.contact-section p, 
+.contact-section .info-item p {
+    color: #555 !important; /* Warna abu gelap agar terlihat di background putih */
+}
+
+/* Perbaikan untuk Dark Mode pada Testimoni agar tidak putih di atas putih */
+.dark-theme .testimonial-card {
+    background-color: #333 !important; /* Kotak jadi gelap */
+    color: #fff !important; /* Tulisan jadi putih */
+}
+
+.dark-theme .testimonial-card p {
+    color: #ddd !important;
+}
+
+.dark-theme .testimonial-card h4 {
+    color: #f39c12 !important; /* Warna emas untuk nama */
+}
+
+/* Memperbaiki footer agar teks terbaca */
+footer p {
+    color: #ffffff !important;
+}
+
+.floating-wa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25d366;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1000;
+    transition: 0.3s;
+}
+.floating-wa:hover { transform: scale(1.1); background-color: #128c7e; }
+
+.blog-section { padding: 80px 5%; text-align: center; background-color: #fdfdfd; }
+.blog-container { 
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+    gap: 30px; 
+    margin-top: 40px; 
+}
+
+.blog-card { 
+    background: white; 
+    border-radius: 12px; 
+    overflow: hidden; 
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); 
+    text-align: left;
+    transition: 0.3s;
+}
+
+.blog-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+
+.blog-img { height: 200px; background-size: cover; background-position: center; }
+
+.blog-content { padding: 20px; }
+.category { 
+    background: #3498db; color: white; padding: 3px 10px; 
+    border-radius: 20px; font-size: 12px; font-weight: bold; 
+}
+
+.blog-content h3 { margin: 15px 0 10px; font-size: 1.2rem; color: #2c3e50; }
+.blog-content p { color: #666; font-size: 14px; margin-bottom: 20px; }
+
+.read-more { color: #3498db; text-decoration: none; font-weight: bold; font-size: 14px; }
+.read-more:hover { text-decoration: underline; }
+
+/* Dark Mode Support untuk Blog */
+.dark-theme .blog-card { background: #2d2d2d; }
+.dark-theme .blog-content h3 { color: #fff; }
+.dark-theme .blog-content p { color: #bbb; }
+
+.status-indicator {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #27ae60;
+}
+.dot {
+    height: 10px;
+    width: 10px;
+    background-color: #2ecc71;
+    border-radius: 50%;
+    display: inline-block;
+    animation: blink 1.5s infinite;
+}
+@keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; }
+    100% { opacity: 1; }
+}
