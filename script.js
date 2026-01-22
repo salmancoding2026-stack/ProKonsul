@@ -57,3 +57,12 @@ form.addEventListener('submit', function(e) {
     form.reset();
     closeModal();
 });
+
+const toggleBtn = document.getElementById('darkModeToggle');
+toggleBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    // Ganti ikon bulan ke matahari
+    const icon = toggleBtn.querySelector('i');
+    icon.classList.toggle('fa-moon');
+    icon.classList.toggle('fa-sun');
+});
